@@ -1,0 +1,58 @@
+<?php
+require_once("../db/mysql.php");
+$create = "CREATE TABLE products (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+category VARCHAR(255) NOT NULL,
+url VARCHAR(255) NOT NULL,
+title VARCHAR(255) NOT NULL,
+technology VARCHAR(255) NOT NULL,
+2gbands VARCHAR(255) NOT NULL,
+3gbands VARCHAR(255) NOT NULL,
+4gbands VARCHAR(255) NOT NULL,
+speed VARCHAR(255) NOT NULL,
+gprs VARCHAR(255) NOT NULL,
+edge VARCHAR(255) NOT NULL,
+announced VARCHAR(255) NOT NULL,
+status VARCHAR(255) NOT NULL,
+dimensions VARCHAR(255) NOT NULL,
+weight VARCHAR(255) NOT NULL,
+sim VARCHAR(255) NOT NULL,
+type VARCHAR(255) NOT NULL,
+size VARCHAR(255) NOT NULL,
+resolution VARCHAR(255) NOT NULL,
+multitouch VARCHAR(255) NOT NULL,
+os VARCHAR(255) NOT NULL,
+chipset VARCHAR(255) NOT NULL,
+cpu VARCHAR(255) NOT NULL,
+gpu VARCHAR(255) NOT NULL,
+cardslot VARCHAR(255) NOT NULL,
+internal VARCHAR(255) NOT NULL,
+pr VARCHAR(255) NOT NULL,
+features VARCHAR(255) NOT NULL,
+video VARCHAR(255) NOT NULL,
+secondary VARCHAR(255) NOT NULL,
+alerttypes VARCHAR(255) NOT NULL,
+loudspeaker VARCHAR(255) NOT NULL,
+jack VARCHAR(255) NOT NULL,
+wlan VARCHAR(255) NOT NULL,
+bluetooth VARCHAR(255) NOT NULL,
+gps VARCHAR(255) NOT NULL,
+radio VARCHAR(255) NOT NULL,
+usb VARCHAR(255) NOT NULL,
+sensors VARCHAR(255) NOT NULL,
+messaging VARCHAR(255) NOT NULL,
+browser VARCHAR(255) NOT NULL,
+java VARCHAR(255) NOT NULL,
+typebattery VARCHAR(255) NOT NULL,
+colors VARCHAR(255) NOT NULL,
+device VARCHAR(255) NOT NULL,
+time TIMESTAMP
+)";
+
+$creatable = mysqli_query($connect, $create);
+if ($creatable) {
+  echo 'Successfully';
+} else {
+  echo 'Failed'.mysqli_error($connect);
+}
+?>

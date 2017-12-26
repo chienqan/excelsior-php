@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.main {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    text-transform: uppercase;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 1180px;
+}
+
+ /*
+    *
+    *
+    *   Lastes News
+    *
+    *
+*/
+
+.reviews > .latestnews > a:link, .latestnews > a:visited, .latestnews > a:hover, .latestnews > a:active {
+    text-decoration:none;
+}
+
+.reviews > .news > .box-news > a:link, .box-news > a:visited, .box-news > a:hover, .box-news > a:active, {
+    text-decoration: none;
+}
+
+.reviews {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    overflow: hidden;
+    width: 100%;
+}
+
+.reviews > .latestnews {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+.reviews > .latestnews > a > h3 {
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    letter-spacing: 5px;
+    top: 231px;
+    width: 100%;
+}
+
+.reviews > .news {
+    overflow: hidden;
+/*     width: 49%;
+    float:right; */
+}
+.reviews > .news > .box-news {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    margin-bottom: -5px;
+}
+
+.reviews > .news > .box-news > a > h3 {
+    position: absolute;
+    color: white;
+    width: 100%;
+    margin: 140px 0;
+    letter-spacing: 5px;
+}
+
+/*
+    *
+    *
+    *   Lastes Products
+    *
+    *
+*/
+
+.lastest-products {
+    border: 1px solid blue;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.lastest-products > .lastest-products-box {
+    border: 1px solid black;
+    float: left; 
+    padding: 3%;
+}
+/*
+    *
+    *
+    *   Device Finder
+    *
+    *
+*/
+.device {
+    margin-bottom: 40px;
+    overflow: hidden;
+    
+}
+.device > .device-title {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    padding: 20px;
+    color: black;
+    font-size: 34px;
+    letter-spacing: 5px;
+}
+.device > .device-title::after {
+    content: "";
+    background-color: black;
+    height: 6px;
+    display: block;
+    width: 1920px;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    margin-top: -3px;
+}
+.device-box {
+    margin-top: -40px;
+    overflow: hidden;
+}
+.device-box > .device-box-content {
+    width: 160px;
+    padding: 60px 60px 14px 60px;
+    float: left;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+.device-box > .device-box-content > a:link, .device-box-content > a:visited, .device-box-content > a:active  {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+.device-box > .device-box-content > a:hover {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+.device-box > .device-box-content > a > img {
+    margin-bottom: 20px;
+}
+.device-box > .device-box-content > a:hover > img {
+    opacity: 0.9;
+}
+
+.device-box > .device-box-content > a:hover {
+    background-color: crimson;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+    font-size: 14px;
+}
+
+.device-box > .device-box-content > a > span {
+    margin-top: -2px;
+    text-align: center;
+    display: block;
+    font-size: 14px;
+}
